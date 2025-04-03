@@ -72,12 +72,18 @@ abstract class BikeState with _$BikeState {
     if (region == BikeRegion.eu) {
       return mode + 4;
     }
+    if (mode == 3) {
+      return 5;  // Verhoogt mode 3 naar een hogere snelheid
+    }
     return mode;
   }
 
   int _modeFromRead(int newmode) {
     if (newmode > 3) {
       return newmode - 4;
+    }
+    if (newmode == 5) {
+      return 3;  // Zorgt ervoor dat mode 3 wordt herkend als snellere versie
     }
     return newmode;
   }
