@@ -58,15 +58,9 @@ abstract class BikeState with _$BikeState {
         region: region);
   }
 
-  BikeRegion _guessRegion(int mode) {
-    if (region != null) {
-      return region!;
-    }
-    if (mode > 3) {
-      return BikeRegion.eu;
-    }
-    return BikeRegion.us;
-  }
+BikeRegion _guessRegion(int mode) {
+   return BikeRegion.us; // Altijd US-instellingen gebruiken
+}
 
   int _modeToWrite() {
     if (region == BikeRegion.eu) {
