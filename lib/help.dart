@@ -35,7 +35,7 @@ Throttle means the motor will run when you press the throttle, regardless of if 
 | ---- | ----- | --- | -------- | ----------- |
 | 1    | EPAC  | Yes | No       | 25 km/h     |
 | 2    | 250W  | Yes | No       | 35 km/h     |
-| 3    | 850W  | Yes | No       | 45 km/h     |
+| 3    | 850W  | Yes | No       | 60 km/h     |
 | 4    | Off-Road | Yes | Yes  | No Limit    |
 
 ## Assist
